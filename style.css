@@ -1,0 +1,1140 @@
+/*
+Theme name: Alfred&Kamilla
+Author: Henriette & Line
+Author uri: http://wordpress.org
+Description: Platfrom til Alfred & Kamilla, både brugere og køkken.
+Version: 1.0
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    size: 0.5rem;
+    color: #101010;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADINGS*/
+
+h1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem; 
+    margin: 1.25rem;
+    text-align: left;
+}
+
+h2{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+    }
+
+h3{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+    }
+
+h4{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center
+    }
+    
+h5{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+    text-align: center;
+}
+
+p{
+    font-size: 0.875rem;
+}
+
+
+/* DISPLAY HEADING */
+
+.display3{
+    font-family: Inter;
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+}
+
+.display4{
+    font-family: Inter;
+    font-size: 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.display5{
+    font-family: Inter;
+    font-size: 0.875rem;
+    margin: 0rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+/* ALIGMENT */
+
+.center{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    text-align: left;
+}
+
+/*CONTAINERS*/
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url('grafik/forside.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+}
+
+.front_container{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-image: url('grafik/frontcustomer.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+    z-index: 1;
+}
+
+.ekstra_billed_container{
+    display: flex;
+    height: 150px;
+    width: 100vw;
+    background-image: url('http://localhost:8888/wordpress/wp-content/uploads/2020/10/ekstra.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+    z-index: 5;
+}
+
+.menu-container{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    /* background-color: tomato; */
+    z-index: 1;
+    align-items: center;
+    margin: 0rem 2rem;
+}
+
+.contest-container{
+    display: flex;
+    width: 85%;
+    height: 70vh;
+    /* background-color: turquoise; */
+    margin: auto auto;
+    z-index: 2;
+}
+
+
+.infotext-container{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    color: #fff;
+    /* background-color: teal; */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0rem 10rem 0rem 0rem;
+}
+
+.infotext-container p{
+    padding: 0rem 0rem 0rem 1.3rem;
+    font-size: 16px;
+    line-height: 1.3rem;
+}
+
+.subscription-container{
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 2.5rem 6rem 2.5rem 6rem;
+    /* background-color: yellow; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-container{
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 2.5rem 15rem 2.5rem 15rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-container p{
+    text-align: center;
+    padding: 0rem 8rem 0rem 8rem;
+}
+
+
+.input-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid #4AAD52;
+    border-radius: 7px;
+    margin: 1.5rem 0rem 0.2rem 0rem;
+    background-color: #fff;
+}
+
+.mail-container {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid #4AAD52;
+    border-radius: 7px;
+    margin: 1.5rem 0rem 0.2rem 0rem;
+    background-color: #fff;
+}
+
+.white_container{
+    background-color: #fff;
+    padding: 1rem 10rem;
+    margin-top: 150px;
+    z-index: -10;
+}
+
+.white_container_ekstra{
+    background-color: #fff;
+    padding: 1rem 10rem;
+    z-index: -10;
+}
+
+.faq_container{
+    width: 100%;
+    border: 1px solid #858585;
+}
+
+.frokoster_customer_container{
+    width: 100%;
+    min-height: 300px;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact_container{
+    display: flex;
+    width: 20%;
+    margin-top: 20px;
+    min-height:200px;
+    flex-direction: column;
+}
+
+.maps_container{
+    display: flex;
+    width: 50%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.payment_container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* background-color: tomato; */
+}
+
+.contact_container p{
+    line-height: 25px;
+}
+
+.contact_container a{
+    text-decoration: none;
+    color: #101010;
+}
+
+.contact_container a:hover{
+    color: #4AAD52;
+}
+
+
+.grey_container{
+    background-color: #EEEFEE;
+  
+    padding-bottom: 2rem;
+    z-index: -10;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SUBCRIPTIONS CONTAINER*/
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.left-container{
+    /* background-color: lightblue; */
+    width: 30%;
+    margin-left: auto;
+    margin-right: 5%;
+
+}
+
+.right-container{
+    /* background-color: lightcoral; */
+    width: 30%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/*MENU*/
+
+.opacity{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.65;
+    background-color: black;
+    position: fixed;
+} 
+
+.front_opacity{
+    height: 150px;
+    width: 100vw;
+    opacity: 0.65;
+    background-color: black;
+    position: fixed;
+} 
+
+.ekstra_opacity{
+    height: 100%;
+    width: 100%;
+    opacity: 0.65;
+    background-color: black;
+} 
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style: none;
+     padding: 1rem 1rem 1rem 1rem;
+     display: inline;
+}
+
+/* LINKS*/
+
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+a:hover{
+    color: #4aad52;
+}
+
+/*LOGIN CUSTOMER*/
+
+
+/* .input{
+    width: 240px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+} */
+
+.input-opret{
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.input-profil{
+    width: 84%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:focus {
+    outline: none;
+} */
+
+ #eyeop, #eyecls, #eyeop2, #eyecls2{
+    border: none;
+    background-color: #ffffff;
+    color: #4AAD52;
+    outline: none;
+}
+
+.forgot a{
+    display: flex;
+    justify-content: flex-end;
+    color: #858585;
+    font-size: 12px;
+    margin-bottom: 5%;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    color: #4AAD52;
+}
+
+
+/* .submit{
+    background-color: #4AAD52;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height:30px;
+    border: none;
+    color: #fff;
+    margin: 1rem 0rem 0.6rem 0rem;
+} */
+
+.save{
+    background-color: #4AAD52;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height:30px;
+    border: none;
+    color: #fff;
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+
+.opret a{
+    color: #858585;
+    text-decoration: none;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.opret a:hover{
+    color: #4aad52;
+}
+
+/* IPAD STR. */
+@media only screen and (max-width: 1024px) {
+    .input-container {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border: 1px solid #4AAD52;
+        border-radius: 7px;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
+
+    .loginbox{
+        width: 60%;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* LOGIN PAGE SLUT*/
+
+/* DROP DOWN MENU */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    color: #fff;
+    min-width: 200px;
+    padding: 0.4rem 0rem;
+    z-index: 1;
+  }
+
+  .dropdown-info {
+    display: none;
+    position: absolute;
+    color: #858585;
+    min-width: 200px;
+    padding: 0.4rem 0rem;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-info {
+    display: block;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: #fff;
+    padding:  0.3rem 0rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: transparent;
+    color: #4AAD52;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* INDHOLD FROKOST */
+
+.week-container{
+    align-items: center;
+    /* background-color: lightsalmon; */
+    display: flex;
+    margin: 0rem 10rem 1rem 10rem;
+    justify-content: center;
+}
+
+.inner {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+.date{
+    text-align: center;
+    justify-content: center;
+    /* background-color: mediumpurple; */
+
+}
+
+.date a{
+    font-family: Inter;
+    text-decoration: none;
+    color: #4AAD52;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.date a:hover{
+    color: #101010;
+}
+.date p{
+    font-size: 0.8rem;
+}
+
+/* .table-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    gap:1rem;
+} */
+
+.ordning{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.weekday{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #101010;
+}
+
+/* SPAN */
+
+
+.ekstra_pris_extra{
+    font-size: 0.875rem;
+    color: #858585;
+    padding: 0.15rem 0rem 0rem 1rem; 
+}
+
+.price-flex{
+  
+   display: flex;
+}
+
+.red a{
+    margin-top: 100px;
+    color: #ca595b;
+    text-decoration: none;
+}
+.weekday tr:nth-child(even), .tableOrder tr:nth-child(even) {
+    background-color: #EEEFEE;
+}
+
+table {
+    font-family: Work Sans;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+td, th {
+    /* text-align: left; */
+    padding: 8px 5px 8px 5px;
+}
+
+.button_frokost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+/* EXTRAORDER BOXES */
+.weekday td:nth-child(1), .weekdag th:nth-child(1){
+    padding: 0rem 0rem 0rem 0.5rem;
+}
+
+.weekday td:nth-child(2), .weekday th:nth-child(2){
+    text-align: left;
+    width: 15%;
+}
+
+.payment_container h4:nth-child(1){
+    width: 10%;
+    padding: 0px 100px 0px 10px;
+}
+
+.payment_container p:nth-child(1){
+    width: 2%;
+    padding: 0px 5px 0px 17px;
+    margin: 0.6rem 0rem 0rem 0rem;
+}
+
+.payment_container h4:nth-child(2){
+    width: 70%;
+    text-align: left;
+}
+
+.payment_container p:nth-child(2){
+    width: 85%;
+    margin: 0.6rem 0rem 0rem 0rem;
+}
+
+.payment_container h4:nth-child(3){
+    width: 10%;
+    /* background-color: teal; */
+    display: flex;
+    padding: 0rem 2.5rem 0rem 0rem;
+    justify-content: flex-end;
+}
+
+.payment_container p:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.6rem 0rem 0rem 0rem;
+    width: 10%;
+}
+
+
+
+.plus-minus-container{
+    display: flex;
+    justify-content: center;
+    /* padding: 0rem 4rem; */
+    align-items: center;
+}
+
+.plus-minus {
+    padding: 0rem 0.5rem;
+}
+
+/*BLOKERET (ÆNDRINGER KAN IKKE FORTAGES START*/
+
+/* .weekday td:nth-child(3){ 
+        opacity: 0.5;
+} */
+
+/*BLOKERET (ÆNDRINGER KAN IKKE FORTAGEs SLUT*/
+
+.minusbutton, .plusbutton{
+    width: 18px;
+    height: 18px;
+    /* background-color: #858585; */
+    /* color: #FFF; */
+    border: none;
+    /* border-radius: 1.5px; */
+    justify-content: center;
+    text-align: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.minusbutton{
+    background-image: url('https://svgshare.com/i/PhA.svg');
+}
+
+.plusbutton{
+    background-image: url('https://svgshare.com/i/PhK.svg');
+}
+
+.counter-input {
+    border: none;
+    width: 21px;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    size: 17px;
+}
+
+/*EKSTRA KUVERTER CLICK */
+
+.kuvert_acco {
+    background-color: #FFF;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size:0.85rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+    color: #4AAD52;
+    font-weight: bold;
+}
+.kuvert_acco:hover{
+    color: #000000;
+}
+
+    
+    
+.oversigt_acco {
+    padding: 10px 18px;
+    display: none;
+    /* background-color: tomato; */
+    overflow: hidden;
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+
+/* TABEL EKSTRA DAGE */
+
+.oversigt_flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.week{
+    width: 19%;
+    min-height: 15%;
+    /* background-color: yellowgreen; */
+}
+
+.week tr:nth-child(even) {
+    background-color: #EEEFEE;
+}
+
+/*OVERVIEW STAR*/
+
+.button_acco { 
+    width:100%; 
+    border: 0
+}
+   
+.accordion {
+   cursor: pointer;
+   padding: 1rem 0.5rem 1rem 0.5rem;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   transition: 0.4s;
+   background-color: transparent;
+}
+   
+.active, td:hover {
+   /* background-color: #4AAD52;  */
+}
+   
+.panel {
+   display: none;
+   overflow: hidden;
+}
+
+.faq-heading{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem 0rem 0rem;
+    justify-content: space-between;
+}
+
+
+
+/* FAQ */
+
+    
+.accordion_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.accordion_head {
+   background-color:#EEEFEE;
+   justify-content: center;
+   align-items: center;
+   color: #101010;
+   cursor: pointer;
+   padding: 5px 15px;
+   border-bottom: 1px solid #858585;
+   line-height: 1.5rem;
+}
+
+.noborder{
+    border: none;
+}
+
+.accordion_body {
+   background:#fff;;
+}
+.accordion_body p{
+   padding: 1rem 25rem 1rem 1rem;
+   margin: 0px;
+   line-height: 1.2rem;
+}
+.plusminus{
+    float: right;
+    font-size: 22px;
+    color: #858585;
+    font-weight: 300;
+    font-family: 'Work Sans' sans-serif;
+}
+
+/*PAYMENT*/
+.corporation-price{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+.corporation-price p:nth-child(2){
+    width: 10%;
+    padding: 0px 73px 0px 10px;
+}
+
+.corporation-price p:nth-child(3){
+    width: 70%;
+    text-align: left;
+}
+
+.corporation-price p:nth-child(4){
+    width: 15%;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-button{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height:30px;
+    border: 2px solid#4aad52;
+    color: #4aad52;
+    margin: 1rem 0rem 0.6rem 0rem;
+}
+
+.download-button:focus{
+    background-color: #4AAD52;
+    color: #fff;
+}
+.container_input {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+.container_input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 3px;
+    border: 1px solid #858585;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container_input input:checked ~ .checkmark {
+    background-color: #4AAD52;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container_input input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container_input .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .payment_info{
+      margin: 0rem 1.5rem 0rem 13rem;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+  }
+
+.table1{
+    text-align: left;
+    margin: 0rem 5rem 1rem 12.5rem;
+    width: 80%;
+    font-size: 0.875rem;
+}
+
+
+.table1 td:nth-child(1){
+    width: 32%;
+}
+
+.table1 tr td:nth-child(2){
+    width: 10%;
+}
+
+.table1 tr td:nth-child(3){
+    width: 28%;
+    text-align: right;
+}
+
+.table1 tr td:nth-child(4){
+    text-align: right;
+}
+
+.table1 tr:nth-child(even){
+    background-color: transparent;
+} 
+
+#summation {
+    font-weight: bold;
+}
+.txt {
+   
+}
+
+.left a:visited{ 
+    color: #4AAD52; 
+}
+
+.left a { 
+    color: #4AAD52; 
+    text-decoration: none;
+}
+
+.right a:visited{ 
+    color: #4AAD52; 
+}
+
+.right a { 
+    color: #4AAD52; 
+    text-decoration: none;
+}
+
+.text_exstra{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 35%;
+    margin-bottom: 2rem;
+    line-height: 1.2rem;
+}
+
+
+/*LOGIN PAGE INPUT*/
+
+.form{
+    display: flex;
+    height: auto;
+    width: 40%;
+	background: #fff;
+	padding: 1rem 0rem 3rem 0rem;
+    border-radius: 20px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .title{
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.form .input_wrap{
+	margin-bottom: 20px;
+	width: 375px;
+	position: relative;
+}
+
+.form .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.form .input_wrap label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form .input_wrap input{
+	padding: 1rem 0.3rem;
+	width: 97%;
+	border: 1px solid transparent;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+.form .input_wrap .input{
+    background: #f5f4f4;
+    
+}
+
+
+.form .input_wrap .input:focus{
+	border-color: #1dbf73;
+}
+
+.form .input_wrap .input_field{
+	position: relative;
+}
+
+.form .input_wrap .btn{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.form .input_wrap .btn.disabled{
+	background: #727272;
+}
+
+.form .input_wrap .btn.enabled{
+	background: #1dbf73;
+	cursor: pointer;
+}
+
+.form .input_wrap .error_msg{
+	font-size: 15px;
+	margin-bottom: 5px;	
+	color: #f74040;
+	display: none;
+}
+
+
+
+
+
