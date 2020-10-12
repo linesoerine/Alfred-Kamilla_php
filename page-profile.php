@@ -103,7 +103,23 @@
         
          <!--LOGIN BUTTON-->
          <input type="text" text="Login" class="save" value="Gem">
-         <span class="red"><a href="#.html">Opsig aftale</a></span>
+        
+         <button class="red" data-modal-target="#modal">Opsig aftale</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+            <div class="title">Opsig aftale</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+            Ønsker du at opsige aftale hos Alfred & Kamilla.<br> 
+            Bemærk dette vil træde i kræft 7 dage efter opsigelse.
+            <div class="confirm-flex">
+                <button class="confirm-no">Nej</button>
+                <button class="confirm-yes">Ja</button>
+            </div>
+            </div>
+        </div>
+        <div id="overlay"></div>
             
 
 
@@ -111,3 +127,45 @@
   </div>
 
 <?php get_footer(); ?>
+
+<script>
+    // POP UP PROFILE//
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active1')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active1')
+  overlay.classList.add('active1')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active1')
+  overlay.classList.remove('active1')
+}
+
+</script>

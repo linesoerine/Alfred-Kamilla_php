@@ -7,23 +7,29 @@
 
       <div class="contact-info">
         
-        <div class="contact_container">
-          <h4 style="text-align: left;">Frokostordning</h4>
-          <br>
-          <p>Sverigesgade 16</p>
-          <p>5000 Odense</p>
-          <p>+45 66 12 16 12</p>
-          <p><a href="mailto:info@alfredogkamilla.dk">info@alfredogkamilla.dk</a></p>
-        </div> <!-- END CONTACT_CONTAINER -->
+      <div class="info-container-contact">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem? Dolorum consequuntur nobis officia quis ipsum sapiente debitis est quod suscipit harum, sequi blanditiis voluptatem vero. Dolor nostrum officiis id!
+          <div>
 
-        <div class="contact_container">
-          <h4 style="text-align: left;">Booking af lokale</h4>
-          <br>
-          <p>Sverigesgade 16</p>
-          <p>5000 Odense</p>
-          <p>+45 66 12 16 12</p>
-          <p><a href="mailto:info@alfredogkamilla.dk">info@alfredogkamilla.dk</a>
-        </div> <!-- END CANTACT_CONTAINER -->
+            <div class="contact-container2">
+            <div class="contact_container">
+              <h4 style="text-align: left;">Frokostordning</h4>
+              <p>Sverigesgade 16</p>
+              <p>5000 Odense</p>
+              <p>+45 66 12 16 12</p>
+              <p><a href="mailto:info@alfredogkamilla.dk">info@alfredogkamilla.dk</a></p>
+            </div> <!-- END CONTACT_CONTAINER -->
+
+            <div class="contact_container">
+              <h4 style="text-align: left;">Booking af lokale</h4>
+              <p>Sverigesgade 16</p>
+              <p>5000 Odense</p>
+              <p>+45 66 12 16 12</p>
+              <p><a href="mailto:info@alfredogkamilla.dk">info@alfredogkamilla.dk</a>
+            </div> <!-- END CANTACT_CONTAINER -->
+          </div> <!-- END INFO-CONTAINER-CONTACT -->
+</div>
+        </div>
 
         <div class="maps_container">
 
@@ -52,6 +58,12 @@
         </div> <!-- END MAPS_CONTAINER -->
 
       </div> <!-- END CONTACT-INFO -->
+
+      <div class="contact-info">
+
+        
+
+        </div> <!-- END CONTACT-INFO -->
 
     </div> <!-- END FROKOST_CUSTOMER_CONTAINER -->
 

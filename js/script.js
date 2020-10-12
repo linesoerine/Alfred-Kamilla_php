@@ -1,11 +1,11 @@
 function PassWordeye() {
-    var passw = document.getElementById("eyeIcon");
-    if (passw.type === "password") {
-      passw.type = "text";
+    var passWo = document.getElementById("eyeIcon");
+    if (passWo.type === "password") {
+      passWo.type = "text";
       eyeop.style.display = "none";
       eyecls.style.display = "block";
     } else {
-      passw.type = "password";
+      passWo.type = "password";
       eyeop.style.display = "block";
       eyecls.style.display = "none";
     }
@@ -181,6 +181,161 @@ function PassWordeye() {
 		$("#sum4").html(sumFri.toFixed());
 	}
 
+ // MONDAY SUM EXTRA//
+ $(document).ready(function(){
+
+	//iterate through each textboxes and add keyup
+	//handler to trigger sum event
+	$(".valueMonEx").each(function() {
+
+		$(this).keyup(function(){
+			mondaySumEx();
+		});
+	});
+
+});
+
+function mondaySumEx() {
+
+	var sumMonEx = 0;
+	//iterate through each textboxes and add the values
+	$(".valueMonEx").each(function() {
+
+		//add only if the value is number
+		if(!isNaN(this.value) && this.value.length!=0) {
+			sumMonEx += parseFloat(this.value);
+		}
+
+	});
+	//.toFixed() method will roundoff the final sum to 2 decimal places
+	$("#sum6").html(sumMonEx.toFixed());
+}
+
+
+// Tuesday //
+$(document).ready(function(){
+
+	//iterate through each textboxes and add keyup
+	//handler to trigger sum event
+	$(".valueTueEx").each(function() {
+
+		$(this).keyup(function(){
+			tuesdaySumEx();
+		});
+	});
+
+});
+
+function tuesdaySumEx() {
+
+	var sumTueEx = 0;
+	//iterate through each textboxes and add the values
+	$(".valueTueEx").each(function() {
+
+		//add only if the value is number
+		if(!isNaN(this.value) && this.value.length!=0) {
+			sumTueEx += parseFloat(this.value);
+		}
+
+	});
+	//.toFixed() method will roundoff the final sum to 2 decimal places
+	$("#sum7").html(sumTueEx.toFixed());
+}
+
+
+// WEDENSDAY //
+$(document).ready(function(){
+
+	//iterate through each textboxes and add keyup
+	//handler to trigger sum event
+	$(".valueWedEx").each(function() {
+
+		$(this).keyup(function(){
+			wedensdaySumEx();
+		});
+	});
+
+});
+
+function wedensdaySumEx() {
+
+	var sumWenEx = 0;
+	//iterate through each textboxes and add the values
+	$(".valueWedEx").each(function() {
+
+		//add only if the value is number
+		if(!isNaN(this.value) && this.value.length!=0) {
+			sumWenEx += parseFloat(this.value);
+		}
+
+	});
+	//.toFixed() method will roundoff the final sum to 2 decimal places
+	$("#sum8").html(sumWenEx.toFixed());
+}
+
+// THURSDAY //
+$(document).ready(function(){
+
+	//iterate through each textboxes and add keyup
+	//handler to trigger sum event
+	$(".valueThuEx").each(function() {
+
+		$(this).keyup(function(){
+			thursdaySumEx();
+		});
+	});
+
+});
+
+function thursdaySumEx() {
+
+	var sumThuEx = 0;
+	//iterate through each textboxes and add the values
+	$(".valueThuEx").each(function() {
+
+		//add only if the value is number
+		if(!isNaN(this.value) && this.value.length!=0) {
+			sumThuEx += parseFloat(this.value);
+		}
+
+	});
+	//.toFixed() method will roundoff the final sum to 2 decimal places
+	$("#sum9").html(sumThuEx.toFixed());
+}
+
+// FRIDAY //
+$(document).ready(function(){
+
+	//iterate through each textboxes and add keyup
+	//handler to trigger sum event
+	$(".valueFriEx").each(function() {
+
+		$(this).keyup(function(){
+			fridaySumEx();
+		});
+	});
+
+});
+
+function fridaySumEx() {
+
+	var sumFriEx = 0;
+	//iterate through each textboxes and add the values
+	$(".valueFriEx").each(function() {
+
+		//add only if the value is number
+		if(!isNaN(this.value) && this.value.length!=0) {
+			sumFriEx += parseFloat(this.value);
+		}
+
+	});
+	//.toFixed() method will roundoff the final sum to 2 decimal places
+	$("#sum10").html(sumFriEx.toFixed());
+}
+
+
+
+
 	function showPrice() {
 		var priceExtra = document.getElementById("myDIV");
 		if (priceExsta.style.display === "none") {
@@ -248,37 +403,4 @@ function PassWordeye() {
       }
     });
   });
-
-
-
- 
-
-  function validation(){
-	var input_text = document.querySelector("#input_text");
-	var input_password = document.querySelector("#input_password");
-	var error_msg = document.querySelector(".error_msg");
-
-	if(input_text.value.length <= 3 || input_password.value.length <= 3 ){
-		error_msg.style.display = "inline-block";
-		input_text.style.border = "1px solid #f74040";
-		input_password.style.border = "1px solid #f74040";
-		return false;
-	}
-	else{
-		return true;
-	}
-	
-}
-
-var input_fields = document.querySelectorAll(".input");
-var login_btn = document.querySelector("#login_btn");
-
-input_fields.forEach(function(input_item){
-	input_item.addEventListener("input", function(){
-		if(input_item.value.length > 3){
-			login_btn.disabled = false;
-			login_btn.className = "btn enabled"
-		}
-	})
-})
 

@@ -34,7 +34,7 @@
       <div class="nav-bar">
 
         <ul>
-          <li><a href="frokostordning">Forside</a></li>
+          <li><a href="">Forside</a></li>
 
           <div class="dropdown">
             <span><a href="#.html">Indstillinger</a></span>

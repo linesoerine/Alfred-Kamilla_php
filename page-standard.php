@@ -201,7 +201,7 @@ get_header(); ?>
                                                 <td>
                                                     <div class="plus-minus-container">
                                                         <input type="button" class="minusbutton plus-minus" value="" id="minus1" onclick="minus1()">
-                                                        <input type="text" class="counter-input plus-minus valueMon" size="25" value="0" id="count1">
+                                                        <input type="text" class="counter-input plus-minus valueMonEx" size="25" value="0" id="count1">
                                                         <input type="button" class="plusbutton plus-minus" value="" id="plus1" onclick="plus1()">
                                                     </div>
                                                 </td>
@@ -209,7 +209,7 @@ get_header(); ?>
                                                 <td>
                                                     <div class="plus-minus-container">
                                                         <input type="button" class="minusbutton plus-minus" value="" id="minus2" onclick="minus2()">
-                                                        <input type="text" class="counter-input plus-minus valueTue" size="25" value="0" id="count2">
+                                                        <input type="text" class="counter-input plus-minus valueTueEx" size="25" value="0" id="count2">
                                                         <input type="button" class="plusbutton plus-minus" value="" id="plus2" onclick="plus2()">
                                                     </div>
                                                 </td>
@@ -217,7 +217,7 @@ get_header(); ?>
                                                 <td>
                                                     <div class="plus-minus-container">
                                                         <input type="button" class="minusbutton plus-minus" value="" id="minus3" onclick="minus3()">
-                                                        <input type="text" class="counter-input plus-minus valueWed" size="25" value="0" id="count3">
+                                                        <input type="text" class="counter-input plus-minus valueWedEx" size="25" value="0" id="count3">
                                                         <input type="button" class="plusbutton plus-minus" value="" id="plus3" onclick="plus3()">
                                                     </div>
                                                 </td>
@@ -225,7 +225,7 @@ get_header(); ?>
                                                 <td>
                                                     <div class="plus-minus-container">
                                                         <input type="button" class="minusbutton plus-minus" value="" id="minus4" onclick="minus4()">
-                                                        <input type="text" class="counter-input plus-minus valueThu" size="25" value="0" id="count4">
+                                                        <input type="text" class="counter-input plus-minus valueThuEx" size="25" value="0" id="count4">
                                                         <input type="button" class="plusbutton plus-minus" value="" id="plus4" onclick="plus4()">
                                                     </div>
                                                 </td>
@@ -233,7 +233,7 @@ get_header(); ?>
                                                 <td>
                                                     <div class="plus-minus-container">
                                                         <input type="button" class="minusbutton plus-minus" value="" id="minus5" onclick="minus5()">
-                                                        <input type="text" class="counter-input plus-minus valueFri" size="25" value="0" id="count5">
+                                                        <input type="text" class="counter-input plus-minus valueFriEx" size="25" value="0" id="count5">
                                                         <input type="button" class="plusbutton plus-minus" value="" id="plus5" onclick="plus5()">
                                                     </div>
                                                 </td>
@@ -245,11 +245,11 @@ get_header(); ?>
                                             <tr class="bold" id="summation">
                                                 <td></td>
                                                 <td style="text-align:left;">Total</td>
-                                                <td><span id="sum">0</span></td>
-                                                <td><span id="sum1">0</span></td>
-                                                <td><span id="sum2">0</span></td>
-                                                <td><span id="sum3">0</span></td>
-                                                <td><span id="sum4">0</span></td>
+                                                <td><span id="sum6">0</span></td>
+                                                <td><span id="sum7">0</span></td>
+                                                <td><span id="sum8">0</span></td>
+                                                <td><span id="sum9">0</span></td>
+                                                <td><span id="sum10">0</span></td>
                                             </tr>
                             
                                         </table>  
